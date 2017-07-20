@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+@model  ArchWebsiteUnit425.Models.AppleGuess
+<div class="jumbotron">
+    <h1>Apple Guessing Game</h1>
+    <p class="lead">Forms</p>
+</div>
+
+<div class="row jumbotron">
+    @using (Html.BeginForm("Index", "Home" ))
+    {
+    <p>How many apples are there:</p>
+    <input id="NumOfApples" type="text" name="NumOfApples" />
+    <input id="ApplesSubmit" type="submit" name="NumOfApples" value="Submit &raquo;" />
+    }
+    @ViewBag.Message1
+</div>
